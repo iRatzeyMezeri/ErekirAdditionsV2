@@ -66,8 +66,6 @@ public class ErekirAdditionsBlocks {
             attribute = ErekirAdditionsAttributes.carbon;
             output = ErekirAdditionsItems.erekirCoal;
             fogRadius = 2;
-            ambientSound = Sounds.drill;
-            ambientSoundVolume = 0.04f;
         }};
 
         // Distribution
@@ -81,7 +79,7 @@ public class ErekirAdditionsBlocks {
             liquidPressure = 1.025f;
             health = 600;
             underBullets = true;
-            ((Conduit)staticConduit).bridgeReplacement = reinforcedBridgeConduit;
+            ((Conduit)staticConduit).rotBridgeReplacement = reinforcedBridgeConduit;
         }};
         
         staticJunction = new LiquidJunction("static-conduit-junction"){{

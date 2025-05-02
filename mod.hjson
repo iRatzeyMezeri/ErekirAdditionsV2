@@ -3,7 +3,7 @@ displayName: "Erekir Additions V2"
 name: "erekiradds"
 author: "InxieRatZey"
 main: "erekiradds.ErekirAdditions"
-description: "overhauled version of a 2024 mod titled "Erekir Additions""
+description: "overhauled version of a 2024 mod titled Erekir Additions"
 version: 1.0
 minGameVersion: 147
 java: true

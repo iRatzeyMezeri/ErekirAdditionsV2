@@ -24,7 +24,7 @@ import mindustry.world.blocks.Attributes.*;
 import mindustry.world.draw.*;
 import mindustry.entities.effect.*;
 import erekiradds.content.ErekirAdditionsItems.*;
-import erekiradds.content.ErekirAdditionsAttributes.*;
+import erekiradds.content.ErekirAdditionsAttributes;
 
 import static mindustry.type.ItemStack.*;
 

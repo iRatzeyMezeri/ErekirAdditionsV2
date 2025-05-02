@@ -36,6 +36,7 @@ public class ErekirAdditionsBlocks {
     staticConduit, staticRouter, staticJunction, staticBridge,
 
     //Power
+    basicStove,
 
     //Defense
 
@@ -96,6 +97,66 @@ public class ErekirAdditionsBlocks {
             health = 1000;
         }};
         // Power
+
+        basicStove = new ConsumeGenerator("basic-stove"){{
+            requirements(Category.power, with(Items.beryllium, 60, Items.graphite, 40, Items.Silicon, 80));
+            size = 3;
+            squareSprite = false;
+            drawer = new drawMulti(
+                new DrawRegion("-bottom"),
+                new DrawLiquidTile("water"){{
+                    alpha = 0.8;
+                    padding = 2;
+                }},
+                new DrawDefault(),
+                new DrawGlowRegion("-glow"){{
+                    color = Color.valueOf("#d1efff");
+                }},
+                new DrawArcSmelt(),
+                new DrawRegion("-top")
+            );
+            generateEffect = new MultiEffect(
+                new ParticleEffect(){{
+                    sizeFrom = 3;
+                    sizeTo = 2;
+                    lifetime = 60f;
+                    lengthOffset = 1.6f;
+                    baseRotation = 45;
+                    cone = 10;
+                }},
+                new ParticleEffect(){{
+                    sizeFrom = 3;
+                    sizeTo = 2;
+                    lifetime = 60f;
+                    lengthOffset = 1.6f;
+                    baseRotation = -45;
+                    cone = 10;
+                }},
+                new ParticleEffect(){{
+                    sizeFrom = 3;
+                    sizeTo = 2;
+                    lifetime = 60f;
+                    lengthOffset = 1.6f;
+                    baseRotation = 135;
+                    cone = 10;
+                }},
+                new ParticleEffect(){{
+                    sizeFrom = 3;
+                    sizeTo = 2;
+                    lifetime = 60f;
+                    lengthOffset = 1.6f;
+                    baseRotation = -135;
+                    cone = 10;
+                }},
+            );
+            health = 280;
+            hasPower = true;
+            hasLiquids = true;
+            powerProduction = 270f/60f;
+            consumeItem(ErekirAdditionsItems.erekirCoal, 1);
+            consumeLiquid(Liquids.Water, 12f/60f);
+        }};
+                        
 
         // Defense
 

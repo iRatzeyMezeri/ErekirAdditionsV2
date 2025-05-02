@@ -22,7 +22,7 @@ public class ErekirAdditionsItems {
         }};
 
         erekirAdditionsItems.addAll(
-                erekirCoal, staticGlass;
+                erekirCoal, staticGlass
         );
     }
 }

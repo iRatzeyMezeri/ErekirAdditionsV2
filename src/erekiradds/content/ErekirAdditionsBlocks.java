@@ -21,6 +21,7 @@ public class ErekirAdditionsBlocks {
     //Distribution
   
     //Liquid
+    staticConduit, staticRouter, staticJunction, staticBridge,
 
     //Power
 
@@ -45,6 +46,48 @@ public class ErekirAdditionsBlocks {
 
         // Liquid
       
+        staticConduit = new ArmoredConduit("1-static-conduit"){{
+            requirements(Category.liquid, with(ErekirAdditionsItems.staticGlass, 1));
+            leaks = false;
+            liquidCapacity = 100f;
+            liquidPressure = 1.025f;
+            health = 600;
+            underBullets = true;
+            explosivenessScale = flammabilityScale = 20f/50f;
+        }};
+        
+        staticJunction = new LiquidJunction("static-junction"){{
+            requirements(Category.liquid, with(ErekirAdditionsItems.staticGlass, 3));
+            buildCostMultiplier = 3f;
+            health = 500;
+            ((Conduit)staticConduit).junctionReplacement = this;
+            solid = false;
+            underBullets = true;
+        }};
+        
+        staticRouter = new LiquidRouter("2-static-liquid-router"){{
+            requirements(Category.liquid, with(Items.graphite, 4, ErekirAdditionsItems.staticGlass, 4));
+            liquidCapacity = 500f;
+            liquidPadding = 3f/4f;
+            underBullets = true;
+            solid = false;
+            health = 700;
+
+            explosivenessScale = flammabilityScale = 40f/150f;
+        }};
+
+        staticBridge = new DirectionLiquidBridge("static-bridge-conduit"){{
+            requirements(Category.liquid, with(Items.thorium, 3, ErekirAdditionsItems.staticGlass, 8));
+            range = 5;
+            hasPower = false;
+            liquidCapacity = 300f;
+            researchCostMultiplier = 1;
+            underBullets = true;
+            health = 1000;
+            explosivenessScale = flammabilityScale = 20f/120f;
+
+            ((Conduit)staticConduit).rotBridgeReplacement = this;
+        }};
         // Power
 
         // Defense

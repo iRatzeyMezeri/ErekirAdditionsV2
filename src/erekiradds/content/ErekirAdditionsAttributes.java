@@ -12,6 +12,6 @@ public class ErekirAdditionsAttributes {
         Blocks.graphiticWall.attributes.set(Attribute.get("carbon-concentration"), 1.75f);
         Blocks.carbonWall.attributes.set(Attribute.get("carbon-concentration"), 1);
         Blocks.arkyicWall.attributes.set(Attribute.get("carbon-concentration"), 0.75f);
-        Blocks.StoneWall.attributes.set(Attribute.get("carbon-concentration"), 0.5f);
+        Blocks.stoneWall.attributes.set(Attribute.get("carbon-concentration"), 0.5f);
     }
 }

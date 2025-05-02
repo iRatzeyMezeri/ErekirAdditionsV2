@@ -20,6 +20,7 @@ import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
+import mindustry.entities.effect.*;
 import erekiradds.content.ErekirAdditionsItems.*;
 
 import static mindustry.type.ItemStack.*;
@@ -99,14 +100,14 @@ public class ErekirAdditionsBlocks {
         // Power
 
         basicStove = new ConsumeGenerator("basic-stove"){{
-            requirements(Category.power, with(Items.beryllium, 60, Items.graphite, 40, Items.Silicon, 80));
+            requirements(Category.power, with(Items.beryllium, 60, Items.graphite, 40, Items.silicon, 80));
             size = 3;
             squareSprite = false;
-            drawer = new drawMulti(
+            drawer = new DrawMulti(
                 new DrawRegion("-bottom"),
-                new DrawLiquidTile("water"){{
-                    alpha = 0.8;
-                    padding = 2;
+                new DrawLiquidTile(Liquids.water){{
+                    alpha = 0.8f;
+                    padding = 2f;
                 }},
                 new DrawDefault(),
                 new DrawGlowRegion("-glow"){{

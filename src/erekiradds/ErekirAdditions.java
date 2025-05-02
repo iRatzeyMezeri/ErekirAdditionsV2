@@ -17,6 +17,7 @@ public class ErekirAdditions extends Mod{
         
         ErekirAdditionsItems.load();
         ErekirAdditionsBlocks.load();
+        ErekirAdditionsAttributes.load();
         // ErekirAdditionsUnits.load();
     }
 

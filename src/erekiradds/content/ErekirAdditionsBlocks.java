@@ -20,7 +20,6 @@ import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
-import mindustry.world.Block;
 import erekiradds.content.ErekirAdditionsItems.*;
 
 import static mindustry.type.ItemStack.*;
@@ -66,7 +65,6 @@ public class ErekirAdditionsBlocks {
             liquidPressure = 1.025f;
             health = 600;
             underBullets = true;
-            explosivenessScale = flammabilityScale = 20f/50f;
         }};
         
         staticJunction = new LiquidJunction("static-junction"){{
@@ -86,7 +84,6 @@ public class ErekirAdditionsBlocks {
             solid = false;
             health = 700;
 
-            explosivenessScale = flammabilityScale = 40f/150f;
         }};
 
         staticBridge = new DirectionLiquidBridge("static-bridge-conduit"){{
@@ -97,7 +94,6 @@ public class ErekirAdditionsBlocks {
             researchCostMultiplier = 1;
             underBullets = true;
             health = 1000;
-            explosivenessScale = flammabilityScale = 20f/120f;
 
             ((Conduit)staticConduit).rotBridgeReplacement = this;
         }};

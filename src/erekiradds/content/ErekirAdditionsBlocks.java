@@ -22,6 +22,7 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.entities.effect.*;
 import erekiradds.content.ErekirAdditionsItems.*;
+import erekiradds.content.ErekirAdditionsAttributes.*;
 
 import static mindustry.type.ItemStack.*;
 
@@ -30,6 +31,7 @@ public class ErekirAdditionsBlocks {
     //Turrets
 
     //Drills/Production
+    carbonExtractor,
 
     //Distribution
   
@@ -55,6 +57,18 @@ public class ErekirAdditionsBlocks {
         // Turrets
 
         // Drills/Production
+        carbonExtractor = new WallCrafter("carbon-extractor"){{
+            requirements(Category.production, with(Items.graphite, 30, Items.tungsten, 20, Items.beryllium, 30));
+            consumePower(20 / 60f);
+
+            drillTime = 120f;
+            size = 2;
+            attribute = ErekirAdditionsAttributes.carbon;
+            output = ErekirAdditionsItems.erekirCoal;
+            fogRadius = 2;
+            ambientSound = Sounds.drill;
+            ambientSoundVolume = 0.04f;
+        }};
 
         // Distribution
 
@@ -67,6 +81,7 @@ public class ErekirAdditionsBlocks {
             liquidPressure = 1.025f;
             health = 600;
             underBullets = true;
+            ((Conduit)staticConduit).bridgeReplacement = reinforcedBridgeConduit;
         }};
         
         staticJunction = new LiquidJunction("static-conduit-junction"){{
@@ -116,6 +131,7 @@ public class ErekirAdditionsBlocks {
                 new DrawArcSmelt(),
                 new DrawRegion("-top")
             );
+            fogRadius = 3;
             health = 280;
             hasPower = true;
             hasLiquids = true;

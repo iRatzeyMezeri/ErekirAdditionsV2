@@ -121,7 +121,7 @@ public class ErekirAdditionsBlocks {
             hasLiquids = true;
             powerProduction = 270f/60f;
             consumeItem(ErekirAdditionsItems.erekirCoal, 1);
-            consumeLiquid(Liquids.Water, 12f/60f);
+            consumeLiquid(Liquids.water, 12f/60f);
         }};
                         
 

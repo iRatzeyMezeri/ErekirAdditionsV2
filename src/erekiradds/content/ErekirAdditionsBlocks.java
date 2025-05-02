@@ -94,8 +94,6 @@ public class ErekirAdditionsBlocks {
             researchCostMultiplier = 1;
             underBullets = true;
             health = 1000;
-
-            ((Conduit)staticConduit).rotBridgeReplacement = this;
         }};
         // Power
 

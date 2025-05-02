@@ -14,10 +14,10 @@ public class ErekirAdditions extends Mod{
     @Override
     public void loadContent(){
         Log.info("adding stuff to Erekir");
-        
+
+        ErekirAdditionsAttributes.load();
         ErekirAdditionsItems.load();
         ErekirAdditionsBlocks.load();
-        ErekirAdditionsAttributes.load();
         // ErekirAdditionsUnits.load();
     }
 

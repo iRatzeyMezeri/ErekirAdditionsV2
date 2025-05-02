@@ -162,6 +162,7 @@ public class ErekirAdditionsBlocks {
             craftTime = 180;
             heatOutput = 8;
 
+            consumeLiquid(Liquids.hydrogen, 4f / 60f);
             consumeItems(with(Items.sand, 4, Items.tungsten, 2));
             consumePower(5f);
         }};

@@ -63,7 +63,7 @@ public class ErekirAdditionsBlocks {
 
             drillTime = 120f;
             size = 2;
-            attribute = ErekirAdditionsAttributes.carbon;
+            attribute = Attribute.get("carbon");
             output = ErekirAdditionsItems.erekirCoal;
             fogRadius = 2;
         }};
@@ -79,7 +79,7 @@ public class ErekirAdditionsBlocks {
             liquidPressure = 1.025f;
             health = 600;
             underBullets = true;
-            ((Conduit)staticConduit).rotBridgeReplacement = reinforcedBridgeConduit;
+            ((Conduit)staticConduit).rotBridgeReplacement = "reinforced-bridge-conduit";
         }};
         
         staticJunction = new LiquidJunction("static-conduit-junction"){{

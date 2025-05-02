@@ -9,6 +9,7 @@ public class PsammosAttributes {
     }
 
     public static void setAttributes(){
+        Blocks.graphiticWall.attributes.set(Attribute.get("carbon-concentration"), 1.75f);
         Blocks.carbonWall.attributes.set(Attribute.get("carbon-concentration"), 1);
         Blocks.arkyicWall.attributes.set(Attribute.get("carbon-concentration"), 0.75f);
         Blocks.StoneWall.attributes.set(Attribute.get("carbon-concentration"), 0.5f);

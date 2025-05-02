@@ -19,7 +19,7 @@ import mindustry.world.blocks.production.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
-import mindustry.world.meta.Attribute.*;
+import mindustry.world.meta.*;
 import mindustry.world.blocks.Attributes.*;
 import mindustry.world.draw.*;
 import mindustry.entities.effect.*;

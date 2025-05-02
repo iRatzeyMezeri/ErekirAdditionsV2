@@ -67,7 +67,7 @@ public class ErekirAdditionsBlocks {
             underBullets = true;
         }};
         
-        staticJunction = new LiquidJunction("static-junction"){{
+        staticJunction = new LiquidJunction("static-conduit-junction"){{
             requirements(Category.liquid, with(ErekirAdditionsItems.staticGlass, 3));
             buildCostMultiplier = 3f;
             health = 500;

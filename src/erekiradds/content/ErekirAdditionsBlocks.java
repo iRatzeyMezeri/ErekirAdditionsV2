@@ -7,6 +7,7 @@ import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.heat.HeatProducer;
 import mindustry.world.blocks.production.*;
+import mindustry.world.blocks.liquid.*;
 import mindustry.world.draw.*;
 import erekiradds.content.ErekirAdditionsItems.*;
 

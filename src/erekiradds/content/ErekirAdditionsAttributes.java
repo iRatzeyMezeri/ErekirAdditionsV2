@@ -3,7 +3,7 @@ package erekiradds.content;
 import mindustry.content.Blocks;
 import mindustry.world.meta.*;
 
-public class PsammosAttributes {
+public class ErekirAdditionsAttributes {
     public static void load(){
         Attribute.add("carbon-concentration");
     }

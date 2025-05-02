@@ -64,7 +64,7 @@ public class ErekirAdditionsBlocks {
             consumePower(20 / 60f);
             drillTime = 120f;
             size = 2;
-            attribute = Attribute.get("carbon");
+            attribute = ErekirAdditionsAttributes.carbon;
             output = ErekirAdditionsItems.erekirCoal;
             fogRadius = 2;
         }};

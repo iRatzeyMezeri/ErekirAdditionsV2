@@ -116,40 +116,6 @@ public class ErekirAdditionsBlocks {
                 new DrawArcSmelt(),
                 new DrawRegion("-top")
             );
-            generateEffect = new MultiEffect(
-                new ParticleEffect(){{
-                    sizeFrom = 3;
-                    sizeTo = 2;
-                    lifetime = 60f;
-                    lengthOffset = 1.6f;
-                    baseRotation = 45;
-                    cone = 10;
-                }},
-                new ParticleEffect(){{
-                    sizeFrom = 3;
-                    sizeTo = 2;
-                    lifetime = 60f;
-                    lengthOffset = 1.6f;
-                    baseRotation = -45;
-                    cone = 10;
-                }},
-                new ParticleEffect(){{
-                    sizeFrom = 3;
-                    sizeTo = 2;
-                    lifetime = 60f;
-                    lengthOffset = 1.6f;
-                    baseRotation = 135;
-                    cone = 10;
-                }},
-                new ParticleEffect(){{
-                    sizeFrom = 3;
-                    sizeTo = 2;
-                    lifetime = 60f;
-                    lengthOffset = 1.6f;
-                    baseRotation = -135;
-                    cone = 10;
-                }}
-            );
             health = 280;
             hasPower = true;
             hasLiquids = true;

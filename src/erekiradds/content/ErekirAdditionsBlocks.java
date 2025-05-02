@@ -147,7 +147,7 @@ public class ErekirAdditionsBlocks {
                     lengthOffset = 1.6f;
                     baseRotation = -135;
                     cone = 10;
-                }},
+                }}
             );
             health = 280;
             hasPower = true;

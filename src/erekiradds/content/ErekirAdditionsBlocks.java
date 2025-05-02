@@ -19,6 +19,8 @@ import mindustry.world.blocks.production.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
+import mindustry.world.meta.Attribute.*;
+import mindustry.world.blocks.Attributes.*;
 import mindustry.world.draw.*;
 import mindustry.entities.effect.*;
 import erekiradds.content.ErekirAdditionsItems.*;
@@ -60,7 +62,6 @@ public class ErekirAdditionsBlocks {
         carbonExtractor = new WallCrafter("carbon-extractor"){{
             requirements(Category.production, with(Items.graphite, 30, Items.tungsten, 20, Items.beryllium, 30));
             consumePower(20 / 60f);
-
             drillTime = 120f;
             size = 2;
             attribute = Attribute.get("carbon");
@@ -79,7 +80,6 @@ public class ErekirAdditionsBlocks {
             liquidPressure = 1.025f;
             health = 600;
             underBullets = true;
-            ((Conduit)staticConduit).rotBridgeReplacement = "reinforced-bridge-conduit";
         }};
         
         staticJunction = new LiquidJunction("static-conduit-junction"){{

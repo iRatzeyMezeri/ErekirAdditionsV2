@@ -40,6 +40,7 @@ public class ErekirAdditionsUnitTypes{
               hovering = true;
               canDrown = false;
               shadowElevation = 0.1f;
+              flying = false;
   
               drag = 0.1f;
               speed = 2f;
@@ -90,7 +91,7 @@ public class ErekirAdditionsUnitTypes{
                   y = 2f;
                   top = true;
                   mirror = true;
-                  reload = 30f/60f;
+                  reload = 30f;
                   shootSound = Sounds.sap;
                   alternate = true;
   

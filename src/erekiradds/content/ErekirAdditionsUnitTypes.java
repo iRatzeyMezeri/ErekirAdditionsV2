@@ -36,7 +36,7 @@ public class ErekirAdditionsUnitTypes{
 
   public static void load() {
      mass = new ErekirUnitType("mass"){{
-              UnitEntity::Create;
+              constructor = UnitEntity::create;
               hovering = true;
               canDrown = false;
               shadowElevation = 0.1f;

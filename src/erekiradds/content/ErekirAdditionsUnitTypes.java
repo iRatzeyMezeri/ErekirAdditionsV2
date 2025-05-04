@@ -90,8 +90,7 @@ public class ErekirAdditionsUnitTypes{
                   y = 2f;
                   top = true;
                   mirror = true;
-                  reload = 30f;
-                  baseRotation = -35f;
+                  reload = 30f/60f;
                   shootSound = Sounds.sap;
                   alternate = true;
   

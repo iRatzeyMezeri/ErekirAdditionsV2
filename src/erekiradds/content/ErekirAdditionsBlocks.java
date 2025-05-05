@@ -62,7 +62,7 @@ public class ErekirAdditionsBlocks {
         carbonExtractor = new WallCrafter("carbon-extractor"){{
             requirements(Category.production, with(Items.graphite, 30, Items.tungsten, 20, Items.beryllium, 30));
             consumePower(20 / 60f);
-            drillTime = 120f;
+            drillTime = 600f;
             size = 2;
             attribute = Attribute.get("carbon");
             output = ErekirAdditionsItems.erekirCoal;
